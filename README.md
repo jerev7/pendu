@@ -1,0 +1,1 @@
+Ce projet a pour but de créer un jeu de pendu, dans lequel on va pouvoir sauvegarder ses scores et les retrouver à chaque fois qu'on lance le programme
