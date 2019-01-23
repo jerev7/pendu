@@ -5,7 +5,7 @@ import os
 import pickle
 from random import choice
 
-from donnee import *
+from donnees import *
 
 #Gestion des scores
 
