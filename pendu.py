@@ -41,17 +41,17 @@ while continuer_partie != 'n':
 			print("...raté, cette lettre ne se trouve pas dans le mot...")
 		mot_trouve = recup_mot_masque(mot_a_trouver, lettres_trouvees)
 
-# A-t-on trouvé le mot ou nos chances sont-elles épuisées ?
-if mot_a_trouver == mot_trouve:
-	print("félicitations ! Vous avez trouvé le mot {0}.".format(mot_a_trouver))
-else:
-	print("PENDU !!! Vous avez perdu.")
+	# A-t-on trouvé le mot ou nos chances sont-elles épuisées ?
+	if mot_a_trouver==mot_trouve:
+		print("félicitations ! Vous avez trouvé le mot {0}.".format(mot_a_trouver))
+	else:
+		print("PENDU !!! Vous avez perdu.")
 
-# On met à jour le score de l'utilisateur
-scores[utilisateur] += nb_chances
+	# On met à jour le score de l'utilisateur
+	scores[utilisateur] += nb_chances
 
-continuer_partie = input("Souhaitez-vous continuer la partie (O/N) ?")
-continuer_partie = continuer_partie.lower()
+	continuer_partie = input("Souhaitez-vous continuer la partie (O/N) ?")
+	continuer_partie = continuer_partie.lower()
 
 # La partie est finie, on enregistre les scores
 enregistrer_scores(scores)
